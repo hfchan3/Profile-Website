@@ -1,1 +1,226 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB222 Final Assessment</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav" style="background-color: #03fd14; color: #090000; display: flex; justify-content: space-around;">
+        <a href="#home" class="nav-item">HOME</a>
+        <a href="#about" class="nav-item">ABOUT ME</a>
+        <a href="#education" class="nav-item">EDUCATION</a>
+        <a href="#contact" class="nav-item">CONTACT</a>
+      </nav>
+    </header>
+
+    <section class="home container" id="home">
+      <div class="home-info" style="padding-top: 30px;">
+        <div class="home-img">
+          <img src="/Documents/image1.jpg" alt="Image 1">
+        </div>
+         <h1 class="title"><span class="first">Hiu Fung</span> <span class="highlighted">Chan James</span></h1>
+         <p class="home-description">Web developer based in Toronto, Canada. <img src="/Documents/image2.avif" alt="Image 2" style="width: 3rem"></p>
+         <a href="/Documents/Resume_Chan_Hiu_Fung.pdf" download class="btn home-btn"><i class="fas fa-download"></i> Resume</a>
+         <a href="#contact" class="btn home-btn">Contact Me</a>
+       </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2 class="heading">ABOUT ME</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <h3 class="abt-span">About me and Academic Honesty</h3>
+          <p>
+            My name is James. I am pursuing a diploma in Computer Programming at Seneca College in order to step into the
+            Technology career in Canada. Prior to studying at Seneca, I worked as a Exceutive Assistant at Hospital Authority
+            in Hong Kong, specialised in Health Infomatics area. I am a sports enthusiast and I enjoy playing basketball and
+            snooker the most.
+          <br><br></p>
+          <p>
+            I declare that my assignment is wholly my own work in accordance with Seneca Academic
+            Policy. No part of this assignment has been copied manually or electronically from any
+            other source (including web sites) except for the information supplied by the WEB222
+            instructors and / or made available in this assignment for my use.
+          <br><br></p>
+          <p>
+            I also declare that no part of this assignment has been distributed to other students.
+          <br><br></p>
+          <p><span style="font-weight: bold">Date:&nbsp;&nbsp;</span>11 April 2024</p>
+        </div>
+    
+        <div class="about-details">
+          <h3 class="abt-span">Basic Information</h3>
+          <table>
+            <tr>
+              <td>AGE:</td>
+              <td>29</td>
+            </tr>
+            <tr>
+              <td>EMAIL:</td>
+              <td>hfchan3@myseneca.ca</td>
+            </tr>
+            <tr>
+              <td>LANGUAGE:</td>
+              <td>English, Mandarin, Cantonese</td>
+            </tr>
+            <tr>
+              <td>CLASS SECTION:</td>
+              <td>ZCC</td>
+            </tr>
+            <tr>
+              <td>STUDENT ID:</td>
+              <td>106184237</td>
+            </tr>
+            <tr>
+              <td>INSTRUCTOR:</td>
+              <td>Mr. Mark-Anthony Meritt</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="education_container" id="education">
+      <h2 class="heading" style="padding-top: 30px;">EDUCATION</h2>
+      <div class="row" style="margin-bottom: 20px;">
+          <div class="column1" style="background-color:rgb(0, 13, 255); color: white">
+              <p>2023 - 2025 (expected)</p>
+              <h2>Diploma</h2>
+          </div>
+          <div class="column2" style="background-color:rgb(129, 195, 245);">
+              <h2>Diploma</h2>
+              <h2 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 20px">SENECA COLLEGE</h2><br>
+              <p style="font-size: 20px">Computer Programming</p>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="column1" style="background-color:rgb(0, 13, 255); color: white">
+            <p>2013 - 2017</p>
+            <h2>Bachelor's Degree</h2>
+        </div>
+        <div class="column2" style="background-color:rgb(129, 195, 245);">
+            <h2>Bachelor's Degree</h2>
+            <h2 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 20px">HONG KONG UNIVERSITY OF SCIENCE AND TECHNOLOGY</h2><br>
+            <p style="font-size: 20px">BSc in Chemistry</p>
+        </div>
+    </div>
+    </div>
+    </section>
+
+  </section>
+  <section class="contact-container" id="contact" >
+    <div class="sub-headers" id="contact">
+      <h2 class="contact-heading" style="padding-top: 40px;">CONTACT FORM</h2>
+      <p><span>*</span> Required Field</p>
+      <form id="contact-form" action="https://httpbin.org/post" method="POST">
+          <div class="form-group">
+              <label for="full-name">Full Name <span>*</span></label>
+              <input id="full-name" name="full-name" autocomplete="name" type="text" placeholder="Full Name" title="Enter your full name" tabindex="3" required>
+          </div>
+  
+          <div class="form-group">
+              <label for="organization">Organization</label>
+              <input id="organization" name="organization" type="text" placeholder="Company Name" title="Enter organization you represent" tabindex="4">
+          </div>
+  
+          <div class="form-group">
+              <label for="email">Email <span>*</span></label>
+              <input id="email" name="email" autocomplete="email" type="email" placeholder="username@email.com" pattern="^[a-z0-9]+@[a-z0-9]+\.[a-z]{2,}$" title="Enter an email address" tabindex="5" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="city">City <span>*</span></label>
+            <input id="city" name="city" title="Enter City" placeholder="Toronto" list="cities" tabindex="6" required>
+            <datalist id="cities">
+                <option value="Toronto"></option>
+                <option value="Vancouver"></option>
+                <option value="Calgary"></option>
+                <option value="Ottawa"></option>
+                <option value="Montreal"></option>
+                <option value="Quebec City"></option>
+                <option value="Regina"></option>
+                <option value="Winnipeg"></option>
+                <option value="Halifax"></option>
+                <option value="Other"></option>
+            </datalist>
+          </div>
+
+        <script src="script.js"></script>
+        
+        
+  
+          <div class="form-group">
+              <label for="postal">Postal Code <span>*</span></label>
+              <input id="postal" name="postal" autocomplete="postal-code" type="text" placeholder="M5V 3L9" pattern="^[a-zA-Z]\d[a-zA-Z]\s?\d[a-zA-Z]\d$" title="Enter valid Canadian postal code" tabindex="7" required>
+          </div>
+          
+  
+          <!-- <div class="form-group"> -->
+            <label>Subject <span>*</span></label>
+            <div id="subject">
+              <div>
+                <input id="question" style="margin-right: 5px;" name="subject" type="radio" tabindex="8" required>
+                <label for="question" style="margin-bottom: 8px;">Question</label>
+              </div>
+              <div>
+                <input id="comment" style="margin-right: 5px;" name="subject" type="radio" tabindex="9" required>
+                <label for="comment" style="margin-bottom: 8px;">Comment</label>
+              </div>
+              <div> 
+                <input id="hiring" style="margin-right: 5px;" name="subject" type="radio" tabindex="10" required>
+                <label for="hiring" style="margin-bottom: 8px;">Hiring</label>
+              </div> 
+              <label id="rate-label" for="rate" hidden>Hourly Rate <span>*</span></label>
+              <input
+                  type="text"
+                  id="rate"
+                  name="rate"
+                  title="Enter CDN dollar"
+                  pattern="^\$?\d+(\.\d{2})?$"
+                  placeholder = "$30";
+                  tabindex="11"
+                  style="width: 30%;"
+                  hidden
+              >
+            </div>
+  
+          <div class="form-group">
+              <label for="message">Message <span>*</span></label>
+              <textarea id="message" name="message" cols="30" rows="10" placeholder="Your message here" tabindex="11" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number (optional)</label>
+            <input id="phone" name="phone" autocomplete="tel-national" type="tel" placeholder="000-000-0000" pattern="^\d{3}-\d{3}-\d{4}$" title="Enter a valid phone number in the format: 000-000-0000" tabindex="12" required>
+        </div>
+  
+          <div id="form-button">
+              <input type="submit" name="submit" value="Submit" tabindex="13">
+              <input type="reset" name="reset" value="Reset" tabindex="14">
+          </div>
+      </form> 
+   </div>
+  </section>
+  
+  <footer>
+    <p>&copy; Created by Hiu Fung Chan James for WEB222 Final Assessment</p>
+  </footer>
+
+   <script src="./script.js"></script>
+  </body>
+  
+</html>
