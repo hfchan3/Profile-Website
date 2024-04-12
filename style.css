@@ -1,0 +1,478 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(to left, lightyellow, rgb(246, 246, 83));
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  min-height: 100vh;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: darkgreen;
+}
+
+img {
+  width: 100%;
+}
+
+/* utility classes */
+.container {
+  padding: 4rem 2rem;
+  color: rgb(6, 103, 6);
+}
+
+.first {
+  color: green;
+  font-size: 60px;
+  padding-right: 8px;
+}
+
+.highlighted {
+  color: rgb(10, 166, 10);
+  font-size: 60px;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  background-color: rgb(9, 134, 230);
+  border: 2px solid darkblue;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 40px;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
+  width: 200px;
+}
+
+.btn:hover {
+  background-color: blue;
+  color: white;
+  border: 2px solid darkblue;
+}
+
+/* Header style */
+.nav {
+  background-color: darkblue;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-links {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-active {
+  left: 0;
+}
+
+.nav-item {
+  color: black;
+  margin: 0 0.5rem;
+}
+
+.nav-item-active {
+  text-decoration: underline; /* Underline the active item */
+}
+
+  /* Home styles */
+.home {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  width: 80%;
+  margin: 0 auto;
+}
+  
+.home-img {
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+  width: 15rem;
+  height: auto;
+  margin: 0 auto; /* This will center the div */
+  display: block; /* This ensures that the div is a block element */
+}
+  
+.home-info {
+  text-align: center;
+  padding-top: 3rem;
+}
+  
+.title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+  
+.home-description {
+  opacity: 0.7;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+/* About style */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, rgb(253, 170, 4), pink);
+  padding-top: 5%;
+  padding-bottom: 15%;
+  box-shadow: 0 0 10px #feca3a, 0 0 20px #faf324, 0 0 30px #edf26e, 0 0 40px #e3f282;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 50px;
+  color: darkgreen;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  width: 80%; /* adjust as needed */
+  
+}
+
+.about-text, .about-details {
+  width: 45%;
+  border: 3px dotted #f70404;
+  padding: 20px;
+  color: darkblue;
+  box-sizing: border-box;
+  text-align: left; /* This will center the content */
+  border-radius: 10px; /* This will make the edges rounded */
+  background-color: rgb(251, 251, 91); /* This will change the background color to dark green */
+  box-shadow: 10px 10px 5px grey;
+}
+
+.abt-span {
+  color: rgb(118, 4, 82);
+  margin-top: -10px;
+  text-align: center;
+  padding: 10px;
+}
+
+table {
+  display: flex;
+  width: 90%;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: auto;
+}
+
+table, th, td {
+  border: none;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+td:first-child {
+  font-weight: bold;
+}
+
+/* Education Styles */
+.education_container {
+  background: linear-gradient(20deg,purple,violet, rgb(221, 170, 224));
+  box-shadow: 0 0 10px #f28be2, 0 0 20px #fa5bcd, 0 0 30px #df3ef5, 0 0 40px #f305ef;
+  padding-top: 4%;
+  padding-bottom: 15%;
+}
+
+.column1 {
+  float: center;
+  width: 20%;
+  padding: 60px;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}
+
+.column2 {
+  float: center;
+  width: 60%;
+  padding: 60px;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}
+
+/* Clear floats after the columns */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin-left: 85px;
+  height: auto;
+}
+
+.column1 {
+  padding: 30px;
+  width: 30%;
+  word-wrap: break-word;
+  height: auto;
+  box-shadow: 10px 10px 5px whitesmoke;
+}
+
+.column2 {
+  padding: 30px;
+  width: 70%;
+  align-items: center;
+  word-wrap: break-word;
+  height: auto;
+  box-shadow: 10px 10px 5px whitesmoke;
+}
+
+/* Contact styles */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3%;
+  padding-bottom: 1%;
+}
+
+.contact-heading {
+  text-align: center;
+  margin-top: -15%;
+  margin-bottom: 8%;
+  color: darkgreen;
+}
+
+#contact span{
+  color: red;
+}
+
+.contact-info-item {
+  display: flex;
+}
+
+.contact-info-icon {
+  width: 50px;
+  height: 50px;
+  background-color: aqua;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form form{
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea,
+select {
+  background: white;
+  border: 2px solid #000;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  padding: 0.8rem 1rem;
+  width: 100%; /* Make all text boxes the same width */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  margin-bottom: 1rem;
+}
+
+.sub-headers {
+  width: 50%; /* Adjust as needed */
+  margin-top: 100px; /* Adjust this value as needed */
+  margin-bottom: 50px; /* Add space after the title */
+  position: relative;
+}
+
+
+.sub-headers p {
+  margin-bottom: 10px; /* Adjust this value as needed */
+}
+
+#subject div {
+  display: flex;
+  align-items: center; /* Align item name and dot input on the same row */
+}
+
+#subject div input[type="radio"] {
+  margin-left: 1rem; /* Adjust this value as needed to reduce spacing between item name and dot input */
+  width: 1em; /* Make all dots the same size */
+  height: 1em; /* Make all dots the same size */
+}
+
+#form-button {
+  display: flex; /* Align items on the same row */
+  justify-content: space-between; /* Add space between the buttons */
+}
+
+input[type="submit"],
+input[type="reset"] {
+  width: 150px; /* Adjust this value as needed to change the size of the buttons */
+  background-color: darkgreen;
+  color: white;
+  box-shadow: 5px 5px 1px grey;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: rgb(6, 242, 42);
+  color: black;
+  border: 2px solid black;
+}
+
+input[type="submit"]:focus,
+input[type="reset"]:focus {
+  outline: none;
+  border: 3px solid red; /* Adjust thickness as needed */
+}
+
+footer {
+  position: relative;
+  margin-top: 100px;
+  color: darkgreen;
+  text-align: center;
+  padding: 2rem 0;
+  height: 30px;
+  width: 100%; /* Make the footer take up the full width */
+  order: 2; /* Place the footer last */
+}
+
+/* Desktop Design  */
+@media screen and (max-width: 600px) and (min-width: 600px) {
+    .container {
+      padding: 4rem 6rem;
+    }
+
+    .column {
+      width: 100%;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  
+    /* grid */
+    .grid {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+  
+    .grid-item {
+      width: 22%;
+    }
+
+
+  
+/* Header style */
+.nav {
+  background-color: darkblue;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  display: none; /* Hide the logo as it's not present in the provided image */
+}
+
+.nav-links {
+  display: flex; /* Change from column to row direction */
+  justify-content: center; /* Center the items */
+  width: 50%; /* Reduce the width to bring items closer to the middle */
+  position: relative; /* Change from absolute to relative */
+  top: 0; /* Reset the top value */
+  left: 0; /* Reset the left value */
+  padding: 1rem;
+}
+
+.nav-item {
+  font-size: 0.8rem;
+  color: var(--your-color); 
+  display: block;
+  text-align: center;
+  margin-bottom: 0; /* Reset the bottom margin */
+  text-transform: uppercase; /* Change from capitalize to uppercase */
+}
+
+.toggler .line {
+  display: none; /* Hide the toggler lines as they're not present in the provided image */
+}
+  
+/* hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+  
+    .hero-info {
+      text-align: left;
+    }
+  
+    .title {
+      font-size: 5rem;
+    }
+  
+    /* About */
+    .about {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .about-img {
+      width: 40%;
+    }
+  
+    .about-info {
+      width: 55%;
+    }
+  
+    /* contact */
+    .contact {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .contact-form {
+      width: 40%;
+    }
+  
+    .submit-btn {
+      font-size: 1rem;
+    }
+
+    .column {
+      flex: 100%;
+  }
+}
