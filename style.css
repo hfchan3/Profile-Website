@@ -390,7 +390,6 @@ footer {
       width: 22%;
     }
 
-
   
 /* Header style */
 .nav {
@@ -430,49 +429,49 @@ footer {
   display: none; /* Hide the toggler lines as they're not present in the provided image */
 }
   
-/* hero */
-.hero {
+/* Home */
+.home {
     display: flex;
     justify-content: space-between;
 }
   
-    .hero-info {
-      text-align: left;
-    }
+.home-info {
+    text-align: left;
+}
   
-    .title {
-      font-size: 5rem;
-    }
+.title {
+    font-size: 5rem;
+}
   
-    /* About */
-    .about {
-      display: flex;
-      justify-content: space-between;
-    }
+/* About */
+.about {
+    display: flex;
+    justify-content: space-between;
+}
   
-    .about-img {
-      width: 40%;
-    }
+.about-img {
+    width: 40%;
+}
   
-    .about-info {
-      width: 55%;
-    }
+.about-info {
+    width: 55%;
+}
   
-    /* contact */
-    .contact {
-      display: flex;
-      justify-content: space-between;
-    }
+/* Contact */
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
   
-    .contact-form {
-      width: 40%;
-    }
+.contact-form {
+    width: 40%;
+}
   
-    .submit-btn {
-      font-size: 1rem;
-    }
+.submit-btn {
+    font-size: 1rem;
+}
 
-    .column {
-      flex: 100%;
+.column {
+    flex: 100%;
   }
 }
